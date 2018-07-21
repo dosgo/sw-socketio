@@ -10,6 +10,8 @@
             "email": "dosgo@qq.com"
         }
     ],
+    "minimum-stability":"dev",
+    
     "require": {
         "php": ">=5.4"
     },
