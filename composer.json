@@ -1,5 +1,5 @@
 {
-    "name": "dosgo/sw-socketio",
+    "name": "swoole/sw-socketio",
     "description": "A server side alternative implementation of socket.io in PHP based on Swoole.",
     "keywords": ["swoole","socketio","socket-io","phpsocket.io"],
     "homepage": "https://github.com/dosgo/sw-socketio",
@@ -11,7 +11,7 @@
         }
     ],
     "minimum-stability":"dev",
-    
+
     "require": {
         "php": ">=5.4"
     },
