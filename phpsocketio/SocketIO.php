@@ -85,6 +85,9 @@ class SocketIO
         $serv->on('receive', function ($serv, $fd, $from_id, $data){
             call_user_func_array(array('Swoole\WorkermanApi','WorkerMessage'),[$serv,$fd,$data]);
         });
+        $serv->on('close', function ($serv, $fd) {
+            call_user_func_array(array('Swoole\WorkermanApi','Free'),[$serv,$fd]);
+        });
     }
     
     
