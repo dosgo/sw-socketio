@@ -1,0 +1,17 @@
+{
+    "name": "dosgo/sw-socketio",
+    "description": "A server side alternative implementation of socket.io in PHP based on Swoole.",
+    "keywords": ["swoole","socketio","socket-io","phpsocket.io"],
+    "homepage": "https://github.com/dosgo/sw-socketio",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dosgo",
+            "email": "dosgo@qq.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {"PHPSocketIO\\": "./phpsocketio"}
+    }
+}
