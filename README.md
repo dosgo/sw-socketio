@@ -12,5 +12,8 @@ composer require dosgo/sw-socketio
   php  test\echotest.php   socket.io-server   
   go run test\main.go   socker.io-client
   
+  memory_limit 512M  
+  worker_num 1 
+  150000 client
   
   
