@@ -5,11 +5,11 @@ namespace  Swoole;
 class   WorkermanApi
 {
  
-    function WorkerConnect($serv,$fd){
+    static public function  WorkerConnect($serv,$fd){
         $serv->Connections[$fd]=new TcpConnection($serv,$fd);
         $serv->io->engine->onConnect($serv->Connections[$fd]);
     }
-    function WorkerMessage($serv,$fd,$data){
+    static public function  WorkerMessage($serv,$fd,$data){
          //此处模拟workerman的自定义协议回调 input decode
 		if(isset($serv->Connections[$fd])){
 			$Connection= $serv->Connections[$fd];
@@ -27,7 +27,7 @@ class   WorkermanApi
 		   }
 	   }
     }
-	function Free($serv,$fd){
+	static public function  Free($serv,$fd){
 		if(isset($serv->Connections[$fd])){
 			$Connection= $serv->Connections[$fd];
 			if($Connection->onClose){
