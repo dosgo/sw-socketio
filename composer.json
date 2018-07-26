@@ -19,6 +19,6 @@
         "php": ">=5.4"
     },
     "autoload": {
-        "psr-4": {"PHPSocketIO\\": "./phpsocketio"}
+        "psr-4": {"SWPHPSocketIO\\": "./phpsocketio"}
     }
 }
